@@ -35,6 +35,6 @@ if (!isset($_SESSION['productos'])) {
 }
 
 echo "<h2>Datos guardados con éxito</h2>";
-echo "<p><a href='../lista.php'>Ver lista de libros</a></p>";
-echo "<p><a href='../index.php'>Agregar nuevo libro</a></p>";
+echo "<p><a href='lista.php'>Ver lista de libros</a></p>";
+echo "<p><a href='index.php'>Agregar nuevo libro</a></p>";
 ?>

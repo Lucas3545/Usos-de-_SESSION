@@ -19,7 +19,7 @@ session_start();
                     <h4 class="mb-0">Nuevo Libro</h4>
                 </div>
                 <div class="card-body">
-                    <form action="back/procesar.php" method="POST">
+                    <form action="procesar.php" method="POST">
                         <input type="hidden" name="accion" value="crear">
                         <div class="mb-3">
                             <label class="form-label">autor</label>

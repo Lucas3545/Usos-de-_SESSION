@@ -1,6 +1,6 @@
 <?php
 session_start();
-include 'config/funciones.php';
+include 'funciones.php';
 ?>
 
 <!DOCTYPE html>
@@ -55,7 +55,7 @@ include 'config/funciones.php';
                                         <a href="editar.php?id=<?= $prod['id_producto'] ?>" class="btn btn-sm btn-warning">
                                             <i class="bi bi-pencil"></i> Editar
                                         </a>
-                                        <a href="back/procesar.php?accion=eliminar&id=<?= $prod['id_producto'] ?>" 
+                                        <a href="procesar.php?accion=eliminar&id=<?= $prod['id_producto'] ?>"
                                            class="btn btn-sm btn-danger" 
                                            onclick="return confirm('¿Eliminar este libro?')">
                                             <i class="bi bi-trash"></i> Eliminar

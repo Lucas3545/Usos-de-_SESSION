@@ -11,7 +11,7 @@ if ($_GET['accion'] == 'eliminar') {
         }
     }
     $_SESSION['productos'] = array_values($_SESSION['productos']);
-    header("Location: ../lista.php");
+    header("Location: lista.php");
     exit();
 }
 
@@ -20,7 +20,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $accion = $_POST['accion'];
 
     if ($accion == 'crear') {
-        // Generar nuevo ID
         $nuevo_id = empty($_SESSION['productos']) ? 1 : max(array_column($_SESSION['productos'], 'id_producto')) + 1;
         
         $datosProducto = [
@@ -50,6 +49,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         }
     }
 
-    header("Location: ../lista.php");
+    header("Location: lista.php");
     exit();
 }

@@ -29,7 +29,7 @@ $libros = $_SESSION['libros'] ?? [];
     <div class="card mx-auto" style="max-width: 500px;">
         <div class="card-header bg-warning"><h4>Editar Producto</h4></div>
         <div class="card-body">
-            <form action="back/procesar.php" method="POST">
+            <form action="procesar.php" method="POST">
                 <input type="hidden" name="accion" value="editar">
                 <input type="hidden" name="id_producto" value="<?= $libro_encontrado['id_producto'] ?>">
 
