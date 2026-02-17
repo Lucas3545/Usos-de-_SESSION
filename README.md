@@ -20,6 +20,7 @@ $_SESSION['autores']: Lista de 7 autores famosos (Cervantes, García Márquez, B
 $_SESSION['libros']: Lista de 7 libros clásicos
 $_SESSION['editoriales']: Lista de 6 editoriales costarricenses
 Inicializa $_SESSION['productos'] como array vacío si no existe (aquí se guardarán los libros creados)
+
 3. index.php
 Propósito: Formulario para agregar nuevos libros.
 
@@ -29,6 +30,7 @@ Autor (campo de texto libre)
 Editorial (campo de texto libre)
 Libro (campo de texto libre)
 Envía los datos a procesar.php con accion=crear
+
 4. procesar.php
 Propósito: Controlador central que procesa todas las operaciones CRUD.
 
@@ -61,6 +63,7 @@ Botones de acción:
 Editar: Enlaza a editar.php?id=X
 Eliminar: Enlaza a procesar.php?accion=eliminar&id=X con confirmación JavaScript
 Botón para agregar nuevo libro que lleva a index.php
+
 6. editar.php
 Propósito: Formulario para editar un libro existente.
 
@@ -72,6 +75,7 @@ $_SESSION['autores']
 $_SESSION['editoriales']
 $_SESSION['libros']
 Envía los datos actualizados a procesar.php con accion=editar
+
 7. funciones.php
 Propósito: Funciones auxiliares (actualmente no utilizadas en el proyecto).
 
